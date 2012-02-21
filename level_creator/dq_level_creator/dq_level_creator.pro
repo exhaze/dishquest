@@ -13,14 +13,34 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     sqlhandler.cpp \
-    addleveldialog.cpp
+    addleveldialog.cpp \
+    ../../dishquest/Classes/LevelModel.cpp \
+    ../../dishquest/Classes/DishModel.cpp \
+    ../../dishquest/Classes/DirtModel.cpp \
+    ../../dishquest/Classes/CleanerModel.cpp
 
 HEADERS  += mainwindow.h \
     sqlhandler.h \
-    addleveldialog.h
+    addleveldialog.h \
+    ../../dishquest/Classes/LevelModel.h \
+    ../../dishquest/Classes/DishModel.h \
+    ../../dishquest/Classes/DirtModel.h \
+    ../../dishquest/Classes/CleanerModel.h
 
 FORMS    += mainwindow.ui \
     addleveldialog.ui
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
