@@ -11,10 +11,15 @@ using namespace std;
 class DishModel
 {
 public:
-    DishModel();
+    DishModel(const string& type);
+    ~DishModel();
+
+    void addDirt(DirtModel* dirt);
+
+    const string& getType();
 
 private:
-    vector<DirtModel> m_dirts;
+    vector<DirtModel*> m_dirts;
     string m_type;
     //assets
 };

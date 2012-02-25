@@ -12,11 +12,14 @@ using namespace std;
 class LevelModel
 {
 public:
-    LevelModel();
+    LevelModel(const string& name);
+
+    void addDish(DishModel* dish);
+    void addCleaner(CleanerModel* cleaner);
 
 private:
-    vector<DishModel> m_dishes;
-    vector<CleanerModel> m_cleaners;
+    vector<DishModel*> m_dishes;
+    vector<CleanerModel*> m_cleaners;
     string m_levelName;
     //assets
 };

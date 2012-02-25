@@ -9,11 +9,16 @@ using namespace std;
 class CleanerModel
 {
 public:
-    CleanerModel();
+    CleanerModel(const string& type, int uses);
+
+    int getRemainingUses() const;
+
+    void addStrength(const string* dirt_type, int effectiveness);
 
 private:
     int m_remainingUses;
-    map<string, int> m_strengthMap;
+    string m_type;
+    map<const string*, int> m_strengthMap;
     //assets
 };
 
